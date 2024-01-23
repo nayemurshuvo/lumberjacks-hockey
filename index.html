@@ -38,7 +38,50 @@
 
 <body class="font-manrope">
     <header>
-        <h1 class="text-custom-btn text-7xl">Hello! How are You?</h1>
+        <!-- Navbar -->
+        <nav>
+            <div class="container mx-auto px-8 lg:px-32 mt-8 mb-14">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Pages</a></li>
+                                <li><a>Blog</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl lg:text-4xl font-extrabold">Lumberjack<span class="text-custom-btn">&rsquo;</span>s</h1>
+                        </div>
+                    </div>
+                    <div class="navbar-center">
+                        <div class="space-x-8 text-base hidden lg:flex">
+                            <a href="#"><span class="text-custom-btn font-bold">Home</span></a>
+                            <a href="#">About</a>
+                            <a href="#">Pages</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="flex justify-between items-center space-x-4">
+                            <img class="hidden lg:block" src="./images/search.png" alt="search logo">
+                            <button class="bg-custom-btn px-4 lg:px-6 py-2 lg:py-3 rounded-lg text-white text-lg lg:text-xl font-bold">Get Ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main></main>
     <footer></footer>
