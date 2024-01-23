@@ -22,6 +22,7 @@
                         'custom-heading': '#131318',
                         'custom-para': 'rgba(19, 19, 24, 0.60)',
                         'custom-btn': '#FF4240',
+                        'custom-white': 'rgba(255, 255, 255, 0.60)',
                     }
                 }
             }
@@ -40,7 +41,7 @@
     <header>
         <!-- Navbar -->
         <nav>
-            <div class="container mx-auto px-8 lg:px-32 mt-8 mb-14">
+            <div class="container mx-auto px-8 lg:px-32 mt-4 lg:mt-8">
                 <div class="navbar">
                     <div class="navbar-start">
                         <div class="dropdown">
@@ -61,7 +62,8 @@
                             </ul>
                         </div>
                         <div>
-                            <h1 class="text-2xl lg:text-4xl font-extrabold">Lumberjack<span class="text-custom-btn">&rsquo;</span>s</h1>
+                            <h1 class="text-2xl lg:text-4xl font-extrabold">Lumberjack<span
+                                    class="text-custom-btn">&rsquo;</span>s</h1>
                         </div>
                     </div>
                     <div class="navbar-center">
@@ -76,12 +78,93 @@
                     <div class="navbar-end">
                         <div class="flex justify-between items-center space-x-4">
                             <img class="hidden lg:block" src="./images/search.png" alt="search logo">
-                            <button class="bg-custom-btn px-4 lg:px-6 py-2 lg:py-3 rounded-lg text-white text-lg lg:text-xl font-bold">Get Ticket</button>
+                            <button
+                                class="bg-custom-btn px-4 lg:px-6 py-2 lg:py-3 rounded-lg text-white text-lg lg:text-xl font-bold">Get
+                                Ticket</button>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <!-- Banner  -->
+        <div class="container mx-auto px-8 lg:px-32 lg:mt-14 mt-7">
+            <div class="carousel w-full rounded-2xl">
+                <!-- Slider 1 -->
+                <div id="slide1"
+                    class="carousel-item relative w-full h-[80vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url(./images/1.png)] bg-center bg-cover flex justify-center items-center">
+                    <!-- Black Badge -->
+                    <div class="absolute bottom-8 right-8">
+                        <div class="hidden bg-custom-heading lg:flex flex-col w-2/3 ml-auto justify-center p-8 rounded-2xl">
+                            <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                            <p class="text-custom-white mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Amet voluptatibus quaerat eligendi vero laudantium repudiandae.</p>
+                        </div>
+                    </div>
+                    <!-- Arrow -->
+                    <div class="absolute lg:bottom-4 lg:left-10 bottom-5 space-x-4 transform lg:-translate-y-1/2 sm:translate-x-1/4">
+                        <a href="#slide4" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❯</a>
+                    </div>
+                </div>
+                <!--Slider 2  -->
+                <div id="slide2"
+                    class="carousel-item relative w-full h-[80vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url(./images/banner5.jpg)] bg-center bg-cover flex justify-center items-center">
+                    <!-- Black Badge -->
+                    <div class="absolute bottom-8 right-8">
+                        <div class="hidden bg-custom-heading lg:flex flex-col w-2/3 ml-auto justify-center p-8 rounded-2xl">
+                            <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                            <p class="text-custom-white mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Amet voluptatibus quaerat eligendi vero laudantium repudiandae.</p>
+                        </div>
+                    </div>
+                    <!-- Arrow -->
+                    <div class="absolute lg:bottom-4 lg:left-10 bottom-5 space-x-4 transform lg:-translate-y-1/2 sm:translate-x-1/4">
+                        <a href="#slide1" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❯</a>
+                    </div>
+                </div>
+                <!-- Slider 3 -->
+                <div id="slide3"
+                    class="carousel-item relative w-full h-[80vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url(./images/banner3.jpg)] bg-center bg-cover flex justify-center items-center">
+                    <!-- Black Badge -->
+                    <div class="absolute bottom-8 right-8">
+                        <div class="hidden bg-custom-heading lg:flex flex-col w-2/3 ml-auto justify-center p-8 rounded-2xl">
+                            <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                            <p class="text-custom-white mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Amet voluptatibus quaerat eligendi vero laudantium repudiandae.</p>
+                        </div>
+                    </div>
+                    <!-- Arrow -->
+                    <div class="absolute lg:bottom-4 lg:left-10 bottom-5 space-x-4 transform lg:-translate-y-1/2 sm:translate-x-1/4">
+                        <a href="#slide2" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❯</a>
+                    </div>
+                </div>
+                <!-- Slider 4 -->
+                <div id="slide4"
+                    class="carousel-item relative w-full h-[80vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url(./images/banner4.jpg)] bg-cover bg-bottom flex justify-center items-center">
+                    <!-- Black Badge -->
+                    <div class="absolute bottom-8 right-8">
+                        <div class="hidden bg-custom-heading lg:flex flex-col w-2/3 ml-auto justify-center p-8 rounded-2xl">
+                            <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                            <p class="text-custom-white mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Amet voluptatibus quaerat eligendi vero laudantium repudiandae.</p>
+                        </div>
+                    </div>
+                    <!-- Arrow -->
+                    <div class="absolute lg:bottom-4 lg:left-10 bottom-5 space-x-4 transform lg:-translate-y-1/2 sm:translate-x-1/4">
+                        <a href="#slide3" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-custom-heading text-white text-2xl hover:text-black border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Black Badge Mobile -->
+            <div class="mt-3 mb-10">
+                <div class="bg-custom-heading lg:hidden flex flex-col w-full justify-center p-4 rounded-2xl">
+                    <h3 class="text-lg font-extrabold text-white">Meet all the heroes from the field</h3>
+                    <p class="text-custom-white mt-2 font-medium text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Amet voluptatibus quaerat eligendi vero laudantium repudiandae.</p>
+                </div>
+            </div>
+
+
     </header>
     <main></main>
     <footer></footer>
